@@ -5,10 +5,20 @@ public class Diamond {
     System.out.println("Please enter a number");
     Scanner scan = new Scanner(System.in);
     number = scan.nextInt();
-    if (number % 2 == 0)
+    if (number % 2 == 0) {//Sees if input is even or odd
+      {
+      for (int row = number ; row <= number; row++)
+      {
+        for (int star = 1; star <= row; star++)
+          System.out.print("*");
+
+        System.out.println();
+      }
       System.out.println("Even");
+      }
+    }
     else
-      System.out.println("odd");
+      System.out.println("Odd");
 
 
   }
