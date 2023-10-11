@@ -7,13 +7,13 @@ public class Diamond {
     System.out.println("Please enter a number");
     Scanner scan = new Scanner(System.in);
     row = scan.nextInt();
-    if (row % 2 == 0) {//Sees if input is even or odd
+    if (row % 2 == 1) {//Sees if input is even or odd
       for (i = 0 ; i < row; i++) {
         for (j = 0; j < row - i - 1; j++) {
           System.out.print(" ");
         }
         for (j = 0; j <= i; j++){
-          System.out.print("* ");
+          System.out.print("*");
         }
         System.out.println();
       }
@@ -22,7 +22,7 @@ public class Diamond {
           System.out.print(" ");
       }
       for (j = 0; j<row-i-1; j++) {
-        System.out.print("* ");
+        System.out.print("*");
       }
       System.out.println();
     }
