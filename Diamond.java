@@ -1,22 +1,32 @@
 import java.util.Scanner;
 public class Diamond {
   public static void main(String[] args) {
-    int number;
+    int row;
+    int i;
+    int j;
     System.out.println("Please enter a number");
     Scanner scan = new Scanner(System.in);
-    number = scan.nextInt();
-    if (number % 2 == 1) {//Sees if input is even or odd
-      for (int row = 1 ; row <= number; row++) {
-        for (int star = 1; star <= number; star++) {
-          if (row + star == number-1)
-
-            System.out.print("*");
-          else
-            System.out.print(" ");
+    row = scan.nextInt();
+    if (row % 2 == 0) {//Sees if input is even or odd
+      for (i = 0 ; i < row; i++) {
+        for (j = 0; j < row - i - 1; j++) {
+          System.out.print(" ");
+        }
+        for (j = 0; j <= i; j++){
+          System.out.print("* ");
+        }
+        System.out.println();
       }
-      System.out.println("\n");
+      for (i = 0; i < row-1; i++) {
+        for (j=0;j<=i; j++) {
+          System.out.print(" ");
       }
+      for (j = 0; j<row-i-1; j++) {
+        System.out.print("* ");
+      }
+      System.out.println();
     }
-
+    //else
+    }
   }
 }
