@@ -29,5 +29,7 @@ public class Diamond {
         System.out.println();
       }
      }
+    else
+     System.out.println("even");
     }
   }
