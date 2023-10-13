@@ -31,11 +31,11 @@ public class Diamond {
       }
      }
     else {
-     for (row = 1; row <= number; row++) {
-      for (space = 1; space <= number - row; space++) {
+     for (row = 1; row <= number / 2; row++) {
+      for (space = 1; space <= number / 2 - row; space++) {
         System.out.print("  ");
       }
-      for (star = 1; star <= row - 1; star++) {
+      for (star = 1; star <= 2 * row; star++) {
         if (star > 1) {
           System.out.print(" *");
         } else {
@@ -44,11 +44,11 @@ public class Diamond {
     }
       System.out.println();
     }
-      for (row = number - 1; row >= 1; row--) {
-        for (space = 1; space <= number - row; space++) {
+      for (row = number / 2 - 1; row >= 1; row--) {
+        for (space = 1; space <= number / 2 - row; space++) {
           System.out.print("  ");
         }
-        for (star = 1; star <= 2 * row - 1; star++) {
+        for (star = 1; star <= 2 * row; star++) {
           if (star > 1) {
             System.out.print(" *");
         } else {
