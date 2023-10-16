@@ -6,6 +6,7 @@ public class Diamond {
     int col;
     int star;
     int space;
+    int oneStar;
     System.out.println("Please enter a number");
     Scanner scan = new Scanner(System.in);
     userInput = scan.nextInt();
@@ -31,6 +32,9 @@ public class Diamond {
       }
      }
     else { // Even Star
+    for (oneStar = 0; oneStar < (userInput / 2) - 1; oneStar++)
+      System.out.print("  ");
+    System.out.println(" *");
      for (row = 1; row <= userInput / 2; row++) { //Top half
       for (space = 1; space <= userInput / 2 - row; space++) { //prints spaces
         System.out.print("  ");
@@ -57,6 +61,9 @@ public class Diamond {
         }
         System.out.println();
       }
+    for (oneStar = 0; oneStar < (userInput / 2) - 1; oneStar++)
+      System.out.print("  ");
+    System.out.println(" *");
       }
       scan.close();
     }
