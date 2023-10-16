@@ -6,7 +6,6 @@ public class Diamond {
     int col;
     int star;
     int space;
-    int oneStar;
     System.out.println("Please enter a number");
     Scanner scan = new Scanner(System.in);
     userInput = scan.nextInt();
