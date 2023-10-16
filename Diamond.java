@@ -32,7 +32,7 @@ public class Diamond {
       }
      }
     else { // Even Star
-    for (oneStar = 0; oneStar < (userInput / 2) - 1; oneStar++)
+    for (oneStar = 0; oneStar < (userInput / 2) - 1; oneStar++) // Prints one star at the top
       System.out.print("  ");
     System.out.println(" *");
      for (row = 1; row <= userInput / 2; row++) { //Top half
@@ -61,7 +61,7 @@ public class Diamond {
         }
         System.out.println();
       }
-    for (oneStar = 0; oneStar < (userInput / 2) - 1; oneStar++)
+    for (oneStar = 0; oneStar < (userInput / 2) - 1; oneStar++) //Prints one star at bottom
       System.out.print("  ");
     System.out.println(" *");
       }
