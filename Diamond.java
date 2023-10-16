@@ -6,8 +6,6 @@ public class Diamond {
     int col;
     int star;
     int space;
-    int firstStar = number - 1;
-    String blank = " ";
     System.out.println("Please enter a number");
     Scanner scan = new Scanner(System.in);
     number = scan.nextInt();
@@ -33,12 +31,11 @@ public class Diamond {
       }
      }
     else { // Even Star
-      System.out.println(blank + " *");
-     for (row = 1; row <= number / 2; row++) {
-      for (space = 1; space <= number / 2 - row; space++) {
+     for (row = 1; row <= number / 2; row++) { //Top half
+      for (space = 1; space <= number / 2 - row; space++) { //prints spaces
         System.out.print("  ");
       }
-      for (star = 1; star <= 2 * row; star++) {
+      for (star = 1; star <= 2 * row; star++) { //prints Star
         if (star > 1) {
           System.out.print(" *");
         } else {
@@ -47,11 +44,11 @@ public class Diamond {
     }
       System.out.println();
     }
-      for (row = number / 2 - 1; row >= 1; row--) {
-        for (space = 1; space <= number / 2 - row; space++) {
+      for (row = number / 2 - 1; row >= 1; row--) { //Bottom half
+        for (space = 1; space <= number / 2 - row; space++) { //prints spaces
           System.out.print("  ");
         }
-        for (star = 1; star <= 2 * row; star++) {
+        for (star = 1; star <= 2 * row; star++) { //Prints stars
           if (star > 1) {
             System.out.print(" *");
         } else {
