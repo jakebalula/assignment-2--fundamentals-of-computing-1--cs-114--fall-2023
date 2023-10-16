@@ -1,18 +1,19 @@
 import java.util.Scanner;
 public class Diamond {
   public static void main(String[] args) {
-    int number = 0;
+    int userInput = 0;
     int row = 0;
     int col;
     int star;
     int space;
+    int oneStar;
     System.out.println("Please enter a number");
     Scanner scan = new Scanner(System.in);
-    number = scan.nextInt();
-    if (number % 2 == 1) {//Sees if input is even or odd
+    userInput = scan.nextInt();
+    if (userInput % 2 == 1) {//Sees if input is even or odd
       //Odd Diamond
-      for (row = 1; row <= (number + 1) / 2; row++) { //Top half
-        for (col = 1; col <= (number + 1) / 2 - row; col++) {//print spaces
+      for (row = 1; row <= (userInput + 1) / 2; row++) { //Top half
+        for (col = 1; col <= (userInput + 1) / 2 - row; col++) {//print spaces
           System.out.print(" ");
        }
         for (star = 1; star <= 2 * row - 1; star++) { //print stars
@@ -20,8 +21,8 @@ public class Diamond {
         }
         System.out.println();
       }
-      for (row = (number - 1) / 2; row >= 1; row--) { //Bottom half
-        for (col = 1; col <= (number + 1) / 2 - row; col++) { //Prints spaces
+      for (row = (userInput - 1) / 2; row >= 1; row--) { //Bottom half
+        for (col = 1; col <= (userInput + 1) / 2 - row; col++) { //Prints spaces
           System.out.print(" ");
         }
         for (star = 1; star <= 2 * row - 1; star++) { //Prints Stars
@@ -31,8 +32,8 @@ public class Diamond {
       }
      }
     else { // Even Star
-     for (row = 1; row <= number / 2; row++) { //Top half
-      for (space = 1; space <= number / 2 - row; space++) { //prints spaces
+     for (row = 1; row <= userInput / 2; row++) { //Top half
+      for (space = 1; space <= userInput / 2 - row; space++) { //prints spaces
         System.out.print("  ");
       }
       for (star = 1; star <= 2 * row; star++) { //prints Star
@@ -44,8 +45,8 @@ public class Diamond {
     }
       System.out.println();
     }
-      for (row = number / 2 - 1; row >= 1; row--) { //Bottom half
-        for (space = 1; space <= number / 2 - row; space++) { //prints spaces
+      for (row = userInput / 2 - 1; row >= 1; row--) { //Bottom half
+        for (space = 1; space <= userInput / 2 - row; space++) { //prints spaces
           System.out.print("  ");
         }
         for (star = 1; star <= 2 * row; star++) { //Prints stars
