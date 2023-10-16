@@ -2,7 +2,7 @@ import java.util.Scanner;
 public class Diamond {
   public static void main(String[] args) {
     int number = 0;
-    int row;
+    int row = 0;
     int col;
     int star;
     int space;
